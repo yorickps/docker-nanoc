@@ -1,5 +1,7 @@
-FROM ruby:latest
+FROM ruby:alpine3.6
 MAINTAINER Jo Vandeginste <Jo.Vandeginste@gmail.com>
-CMD /usr/local/bundle/bin/nanoc
+RUN apk add --no-cache build-base &&\
+    rm -rf /var/cache/apk/*
 COPY Gemfile .
 RUN bundle install
+CMD /usr/local/bundle/bin/nanoc
