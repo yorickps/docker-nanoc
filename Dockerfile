@@ -1,4 +1,4 @@
-FROM ruby:alpine3.6
+FROM ruby:alpine3.4
 MAINTAINER Jo Vandeginste <Jo.Vandeginste@gmail.com>
 RUN apk add --no-cache build-base &&\
     rm -rf /var/cache/apk/*
