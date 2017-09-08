@@ -6,4 +6,4 @@ This image contains Nanoc and a few extra gems that help to generate markdown in
 * kramdown
 * coderay
 
-Source image is ruby:alpine3.6
+Source image is ruby:alpine3.4
